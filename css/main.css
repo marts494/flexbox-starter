@@ -96,59 +96,85 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: rgb(117, 145, 129);
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 0 2em;
-  font-size: 1.25em;
-  height: 100%;
+  font-family: 'Neuton', serif;
+  padding: 0em 2em;
+  font-size: 1.3em;
   color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
-header,
-footer {
-  background-color: #222;
-  height: 80px;
-  width: 100%;
-  
+#div-1, #div-2{
+    border-right: 1px solid #fff;
+    padding-right: 30px;
 }
 
-main {
-  background-color: #ccc;
-  height: 250px;
-  width: 100%;
-}
-
-header,
-footer,
-main {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
 
 .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+    
+}
+
+p span{
+    font-family: 'Neuton', serif;
+    font-weight: 700;
+}
+ 
+header,
+footer {
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+}
+
+header h1{
+   font-family: 'Neuton', serif;
+   font-size: 4em;
+}
+
+main {
+  width: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+main p{
+   font-size: 1.4em;
 }
 
 .flex-items {
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  width: 30%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 1.5em;
+    font-size: 1.3em;
+    width: 30%;
+    height: 200px;
 }
+
+footer {
+    border-top: 1px solid #fff;
+    margin-top: 10px;
+    
+}
+
+footer i {
+    padding: 30px 20px 0 0;
+    
+}
+
 
 /* ==========================================================================
    Helper classes
